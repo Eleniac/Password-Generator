@@ -1,14 +1,27 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
+function generate(){
+  prompt("Generate a Password");
+}
+
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
+  console.log(passwordText);
 
 }
+
+function requiredCriteria() {
+  var criteria = ["8-128 characters", "One Lowercase", "One Uppercase","One Numeric Value", "One Special Character"]
+  
+  console.log(criteria.length); 
+  
+}
+
 
 
 
@@ -17,6 +30,17 @@ generateBtn.addEventListener("click", writePassword);
 
 
 
+
+
+
+
+
+
+
+
+
+
+//CLASS README//
 
 //GIVEN I need a new, secure password
 //WHEN I click the button to generate a password//
