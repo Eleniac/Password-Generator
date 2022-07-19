@@ -1,9 +1,4 @@
-// Assignment Code
 var generateBtn = document.querySelector("#generate");
-
-function generate(){
-  prompt("Generate a Password");
-}
 
 // Write password to the #password input
 function writePassword() {
@@ -11,29 +6,67 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-  console.log(passwordText);
 
 }
-
-function requiredCriteria() {
-  var criteria = ["8-128 characters", "One Lowercase", "One Uppercase","One Numeric Value", "One Special Character"]
-  
-  console.log(criteria.length); 
-  
-}
-
-
-
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
 
+function generatePassword() {
+  var length = prompt("Your password needs to be between 8-128 characters in length");
+console.log(length)
+// if user input is less than 8 or greater than 128 or not a number alert saying yo this wrong
+// else continue with the rest of the prompts
+// if (conditions){write the code to run if condition is true}
+if (length < 8){
+alert('Try again');
+generatePassword()
+}else{
+  var uppercase = confirm("Do you want uppercase?");
+}
+
+}
 
 
 
 
 
+// After button is clicked, im going to use either alert prompt or confirm to provide the user with questions
+
+// Store which criterias the user wants based on their prompts min 1 maximum of all of them using an array
+
+// The first pop up should be a user selecting a length of a password. minimum is 8 and max is 128 using the prompt method
+
+// After the length, the user should select if which criterias they want in their password using confirms
+
+// we are going to generate a random password based on the criterias the user selected and using Math.random to randomize the selection
+
+
+
+
+
+
+
+
+
+
+
+// function generate(){
+//   prompt("Generate a Password");
+// }
+// var criteria = ["8-128 characters", "One Lowercase", "One Uppercase","One Numeric Value", "One Special Character"]
+
+// function generatePassword(){}
+    
+    
+// console.log(generatePassword.length); 
+// console.log(criteria.length);
+    
+  
+  
+// passwordText.value = password;
+// console.log(passwordText);
 
 
 
