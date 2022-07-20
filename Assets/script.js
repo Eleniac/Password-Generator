@@ -21,9 +21,22 @@ console.log(length)
 // if (conditions){write the code to run if condition is true}
 if (length < 8){
 alert('Try again');
+
 generatePassword()
+
 }else{
-  var uppercase = confirm("Do you want uppercase?");
+  var uppercase = confirm("Do you want to use an uppercase letter?");
+  console.log(uppercase)
+//if //else
+var lowercase = confirm("Do you want to use a lowercase letter?");
+console.log(lowercase)
+
+var numericValue = confirm("Do you want to use a numeric value?");
+console.log(numericValue)
+
+var specialCharacters = confirm ("Do you want to use special characters?")
+console.log(specialCharacters)
+
 }
 
 }
