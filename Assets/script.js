@@ -12,9 +12,6 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
-var uppercaseCharacters = ["A", "B", "C" ,"D","E", "F", "G","H", "I", "J", "K", "L", "M", "N", "O", "P", "Q" ,"R" ,"S", "T","U", "V", "W", "X", "Y", "Z"]
-
-varlowercaseCharacters = ["a", "b", "c", "d", "e", "f" ,"g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s" ,"t", "u", "v", "w", "x", "y", "z"]
 
 function generatePassword() {
   var length = prompt("Your password needs to be between 8-128 characters in length");
@@ -33,15 +30,24 @@ generatePassword()
 
 }else{
   var uppercase = confirm("Do you want to use an uppercase letter?");
+  //var uppercaseCharacters = ["A", "B", "C" ,"D","E", "F", "G","H", "I", "J", "K", "L", "M", "N", "O", "P", "Q" ,"R" ,"S", "T","U", "V", "W", "X", "Y", "Z"]//
   console.log(uppercase)
-//if //else
-if(isuppercase) {
-  //   selectedCharacters.concat(uppercaseCharacters);
+
+//if(isuppercaseCharacters) {//
+   ////selectedcharacters.concat(upperCharacters);//
+//}//
+
 
 
 var lowercase = confirm("Do you want to use a lowercase letter?");
+//var selectedCharacters = [];//
+//var lowercaseCharacters = ["a", "b", "c", "d", "e", "f" ,"g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s" ,"t", "u", "v", "w", "x", "y", "z"]
 console.log(lowercase)
 
+//if(islowercase) {//
+ //selectedCharacters.concat(lowercaseCharacters);//
+
+//} //
 
 var numericValue = confirm("Do you want to use a numeric value?");
 console.log(numericValue)
