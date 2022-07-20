@@ -16,15 +16,14 @@ function generatePassword() {
     "Your password needs to be between 8-128 characters in length"
   );
   var selectedCharacters = [];
-  console.log(length);
 
   // if user input is less than 8 or greater than 128 or not a number alert saying yo this wrong
   // else continue with the rest of the prompts
   // if (conditions){write the code to run if condition is true}
   if (length < 8 || length > 128) {
-    alert("Try Again");
-
-    return;
+   
+  
+    return "Pick a number between 8-128"
   }
   var uppercase = confirm("Do you want to use an uppercase letter?");
   var uppercaseCharacters = [
@@ -55,7 +54,6 @@ function generatePassword() {
     "Y",
     "Z",
   ];
-  console.log(uppercase);
 
   if (uppercase) {
     selectedCharacters=selectedCharacters.concat(uppercaseCharacters);
@@ -64,7 +62,7 @@ function generatePassword() {
 
   var lowercase = confirm("Do you want to use a lowercase letter?");
   var lowercaseCharacters = ["a", "b", "c", "d", "e", "f" ,"g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s" ,"t", "u", "v", "w", "x", "y", "z"]
-  console.log(lowercase);
+
 
   if (lowercase) {
     selectedCharacters=selectedCharacters.concat(lowercaseCharacters);
@@ -72,23 +70,29 @@ function generatePassword() {
 
   var numericValue = confirm("Do you want to use a numeric value?");
   var numericCharacters = ["1", "2", "3","4","5", "6", "7", "8", "9", "10"]
-  console.log(numericValue);
+
 
   if (numericValue) {
     selectedCharacters=selectedCharacters.concat(numericCharacters);
   }
 
-
   var special = confirm("Do you want to use special characters?");
-  // var specialCharacters: ["~", "!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "+", "{", "}", "[", "]", ":", ";" "'", ".", "<", ".", "/", "?", "\", "|"]
-  console.log(specialCharacters);
+  var specialCharacters = ["~", "!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "+", "{", "}", "[", "]", ":", ";", "'", ".", "<", ".", "/", "?", "|"]
+
 
   if (special) {
     selectedCharacters=selectedCharacters.concat(specialCharacters);
   }
 
- Math.floor(Math.random() * selectedCharacters.length) 
- 
+
+var password = ""
+for (var i = 0; i<length; i++) {
+ var index = Math.floor(Math.random() * selectedCharacters.length) 
+ var randomchar = selectedCharacters[index]
+
+ password=password+randomchar
+} 
+return password;
 }
 
 // After button is clicked, im going to use either alert prompt or confirm to provide the user with questions
