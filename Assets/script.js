@@ -12,6 +12,9 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
+var uppercaseCharacters = ["A", "B", "C" ,"D","E", "F", "G","H", "I", "J", "K", "L", "M", "N", "O", "P", "Q" ,"R" ,"S", "T","U", "V", "W", "X", "Y", "Z"]
+
+varlowercaseCharacters = ["a", "b", "c", "d", "e", "f" ,"g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s" ,"t", "u", "v", "w", "x", "y", "z"]
 
 function generatePassword() {
   var length = prompt("Your password needs to be between 8-128 characters in length");
@@ -20,7 +23,11 @@ console.log(length)
 // else continue with the rest of the prompts
 // if (conditions){write the code to run if condition is true}
 if (length < 8){
-alert('Try again');
+alert('Try Again');
+
+if (length > 129){
+alert('Try Again');
+}
 
 generatePassword()
 
@@ -28,11 +35,17 @@ generatePassword()
   var uppercase = confirm("Do you want to use an uppercase letter?");
   console.log(uppercase)
 //if //else
+if(isuppercase) {
+  //   selectedCharacters.concat(uppercaseCharacters);
+
+
 var lowercase = confirm("Do you want to use a lowercase letter?");
 console.log(lowercase)
 
+
 var numericValue = confirm("Do you want to use a numeric value?");
 console.log(numericValue)
+
 
 var specialCharacters = confirm ("Do you want to use special characters?")
 console.log(specialCharacters)
@@ -57,7 +70,31 @@ console.log(specialCharacters)
 
 
 
-
+// declare function generatePassword()
+// variables holding the different characters
+// i.e uppercase = ['A', 'B', 'C']
+// var selectedCharacters = []
+// I need to use prompt() to gather password criteria
+// var passwordLength = prompt("How many characters would you like in your password?")
+// if password length is less than 8 stop function
+// if password length is greater than 128 stop function
+// confirm() for uppercase letters
+// confirm() for lowercase letters
+// confirm() for special characters
+// confirm() for numeric characters
+// once each confirm/prompt has been answered 
+// if confirms are true keep or get character type for the confirm
+// if no confirm is true stop function
+// if a confirm is true then concat related arr to selected characters arr
+// i.e ['A', 'B', 'C', a, b, c, 1, 2, 3, %, $, #]
+// var selectedCharacters = [];
+// var uppercaseCharacters = ['A', 'B', 'C'];
+// if(isUppercase) {
+//   selectedCharacters.concat(uppercaseCharacters);
+// }
+// for loop based on password length prompt
+// use Math.floor(Math.random() * selectedCharacters.length) to get random index of selectedCharacters
+// return password text
 
 
 
