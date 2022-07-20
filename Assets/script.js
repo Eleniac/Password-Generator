@@ -11,49 +11,26 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
+//function determining the length of the password 
 function generatePassword() {
+  //prompts user to enter 8-12 characters to determine the length of their password
   var length = prompt(
     "Your password needs to be between 8-128 characters in length"
   );
   var selectedCharacters = [];
 
-  // if user input is less than 8 or greater than 128 or not a number alert saying yo this wrong
+  // if user input is less numbers than 8 or greater than 128 or not a number alert saying yo this wrong
   // else continue with the rest of the prompts
   // if (conditions){write the code to run if condition is true}
   if (length < 8 || length > 128) {
    
-  
-    return "Pick a number between 8-128"
+  // return to gathering the correct length if the user inputs a letter or a number less than 8 and greater than 128
+    return "Please pick a number between 8-128"
   }
   var uppercase = confirm("Do you want to use an uppercase letter?");
-  var uppercaseCharacters = [
-    "A",
-    "B",
-    "C",
-    "D",
-    "E",
-    "F",
-    "G",
-    "H",
-    "I",
-    "J",
-    "K",
-    "L",
-    "M",
-    "N",
-    "O",
-    "P",
-    "Q",
-    "R",
-    "S",
-    "T",
-    "U",
-    "V",
-    "W",
-    "X",
-    "Y",
-    "Z",
-  ];
+  var uppercaseCharacters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O",
+    "P","Q","R","S","T","U","V","W","X","Y","Z",];
+// if statement stating if they pick true or "okay" the contents of uppercaseCharacters will be added to the selected characters pool
 
   if (uppercase) {
     selectedCharacters=selectedCharacters.concat(uppercaseCharacters);
@@ -63,12 +40,13 @@ function generatePassword() {
   var lowercase = confirm("Do you want to use a lowercase letter?");
   var lowercaseCharacters = ["a", "b", "c", "d", "e", "f" ,"g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s" ,"t", "u", "v", "w", "x", "y", "z"]
 
-
+// if statement stating if they pick true or "okay" the contents of lowercaseCharacters will be added to the selected characters pool
   if (lowercase) {
     selectedCharacters=selectedCharacters.concat(lowercaseCharacters);
   }
 
   var numericValue = confirm("Do you want to use a numeric value?");
+
   var numericCharacters = ["1", "2", "3","4","5", "6", "7", "8", "9", "10"]
 
 
@@ -131,18 +109,7 @@ return password;
 // use Math.floor(Math.random() * selectedCharacters.length) to get random index of selectedCharacters
 // return password text
 
-// function generate(){
-//   prompt("Generate a Password");
-// }
-// var criteria = ["8-128 characters", "One Lowercase", "One Uppercase","One Numeric Value", "One Special Character"]
 
-// function generatePassword(){}
-
-// console.log(generatePassword.length);
-// console.log(criteria.length);
-
-// passwordText.value = password;
-// console.log(passwordText);
 
 //CLASS README//
 
