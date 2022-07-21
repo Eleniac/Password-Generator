@@ -23,11 +23,11 @@ function generatePassword() {
   // else continue with the rest of the prompts
   // if (conditions){write the code to run if condition is true}
   if (length < 8 || length > 128) {
-   
+  generatePassword()
   // return to gathering the correct length if the user inputs a letter or a number less than 8 and greater than 128
     return "Please pick a number between 8-128 and click the Generate Password button"
   }alert("Please choose at least one of the following character options");
-  
+
   var uppercase = confirm("Do you want to use an uppercase letter?");
   var uppercaseCharacters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O",
     "P","Q","R","S","T","U","V","W","X","Y","Z",];
@@ -67,7 +67,7 @@ var password = ""
 for (var i = 0; i<length; i++) {
  var index = Math.floor(Math.random() * selectedCharacters.length) 
  var randomchar = selectedCharacters[index]
-
+ 
  password=password+randomchar
 } 
 return password;

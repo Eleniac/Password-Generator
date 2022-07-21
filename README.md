@@ -17,7 +17,7 @@ https://github.com/Eleniac/Web-Dev-Portfolio.git
 
 
 # Usage
-This project contains an HTML, CSS and Javascript folder. They are all linked at the top of the HTML file to allow the box to display on the website and javascript prompt the commands of the password generator. Several prompts were created to ensure the user is meeting the specific criteria to create a secure password. 
+This project contains an HTML, CSS and Javascript folder. The first prompt specifies the required length of the password. The user may choose a password length between 8-128. If the user chooses a number less than 8, but greater than 128 the password box will indicate they need to start over by clicking the generate password button. Once the user has selected the appropriate length of their password they will receive an alert with the instructions that they must pick at least one of the following character choices to include in their password. The user will click okay and recieve a series of confirm statements to chose lowercase, uppercase, numeric value or special characters. Once the user has finished their selections the password will generate inside the password generator. A for loop was used to execute the random math using the selected characters pool where the users choices were indexed. 
 
 
 # Credits
