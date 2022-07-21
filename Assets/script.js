@@ -15,17 +15,17 @@ generateBtn.addEventListener("click", writePassword);
 function generatePassword() {
   //prompts user to enter 8-12 characters to determine the length of their password
   var length = prompt(
-    "Your password needs to be between 8-128 characters in length"
+    "Please write the number of characters you would like your password to be. Please keep it between 8-128 characters."
   );
   var selectedCharacters = [];
 
-  // if user input is less numbers than 8 or greater than 128 or not a number alert saying yo this wrong
+  // if user input is less numbers than 8 or greater than 128 or not a number alert saying this is wrong
   // else continue with the rest of the prompts
   // if (conditions){write the code to run if condition is true}
   if (length < 8 || length > 128) {
    
   // return to gathering the correct length if the user inputs a letter or a number less than 8 and greater than 128
-    return "Please pick a number between 8-128"
+    return "Please pick a number between 8-128 and click the Generate Password button"
   }
   var uppercase = confirm("Do you want to use an uppercase letter?");
   var uppercaseCharacters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O",
