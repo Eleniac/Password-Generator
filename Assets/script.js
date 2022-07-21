@@ -22,7 +22,7 @@ function generatePassword() {
   //where selected characters category choices will be stored to generate the password at the end
   var selectedCharacters = [];
 
-  // if (conditions)
+  // if the length is less than 8 or greater than 128 
   if (length < 8 || length > 128) {
   
  // return to gathering the correct length if the user inputs a number less than 8 and greater than 128
