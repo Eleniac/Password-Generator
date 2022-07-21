@@ -30,8 +30,8 @@ function generatePassword() {
   var uppercase = confirm("Do you want to use an uppercase letter?");
   var uppercaseCharacters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O",
     "P","Q","R","S","T","U","V","W","X","Y","Z",];
-// if statement stating if they pick true or "okay" the contents of uppercaseCharacters will be added to the selected characters pool
 
+// if statement stating if they pick true or "okay" the contents of uppercaseCharacters will be added to the selected characters pool
   if (uppercase) {
     selectedCharacters=selectedCharacters.concat(uppercaseCharacters);
   }
@@ -49,7 +49,7 @@ function generatePassword() {
 
   var numericCharacters = ["1", "2", "3","4","5", "6", "7", "8", "9", "10"]
 
-
+// if statement stating if they pick true or "okay" the contents of numericharacters will be added to the selected characters pool
   if (numericValue) {
     selectedCharacters=selectedCharacters.concat(numericCharacters);
   }
