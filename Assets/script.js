@@ -16,7 +16,7 @@ function generatePassword() {
 
   //prompts user to enter 8-12 characters to determine the length of their password
   var length = prompt(
-    "Please write the number of characters you would like your password to be. Please keep the number you select between 8-128 characters."
+    "Please write the number of characters you would like your password to be. Please keep the length you select between 8-128."
   );
   //where selected characters category choices will be stored to generate the password at the end
   var selectedCharacters = [];
@@ -60,6 +60,7 @@ function generatePassword() {
   if (special) {
     selectedCharacters=selectedCharacters.concat(specialCharacters);
   }
+  //password is generated using a for loop and math random from the selectedCharacters pool
 var password = ""
 for (var i = 0; i<length; i++) {
  var index = Math.floor(Math.random() * selectedCharacters.length) 
