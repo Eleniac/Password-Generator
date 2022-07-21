@@ -15,7 +15,7 @@ generateBtn.addEventListener("click", writePassword);
 function generatePassword() {
   //prompts user to enter 8-12 characters to determine the length of their password
   var length = prompt(
-    "Please write the number of characters you would like your password to be. Please keep it between 8-128 characters."
+    "Please write the number of characters you would like your password to be. Please keep the number you select between 8-128 characters."
   );
   var selectedCharacters = [];
 
@@ -26,7 +26,8 @@ function generatePassword() {
    
   // return to gathering the correct length if the user inputs a letter or a number less than 8 and greater than 128
     return "Please pick a number between 8-128 and click the Generate Password button"
-  }
+  }alert("Please choose at least one of the following character options");
+  
   var uppercase = confirm("Do you want to use an uppercase letter?");
   var uppercaseCharacters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O",
     "P","Q","R","S","T","U","V","W","X","Y","Z",];
@@ -62,7 +63,6 @@ function generatePassword() {
     selectedCharacters=selectedCharacters.concat(specialCharacters);
   }
 
-
 var password = ""
 for (var i = 0; i<length; i++) {
  var index = Math.floor(Math.random() * selectedCharacters.length) 
@@ -73,41 +73,6 @@ for (var i = 0; i<length; i++) {
 return password;
 }
 
-// After button is clicked, im going to use either alert prompt or confirm to provide the user with questions
-
-// Store which criterias the user wants based on their prompts min 1 maximum of all of them using an array
-
-// The first pop up should be a user selecting a length of a password. minimum is 8 and max is 128 using the prompt method
-
-// After the length, the user should select if which criterias they want in their password using confirms
-
-// we are going to generate a random password based on the criterias the user selected and using Math.random to randomize the selection
-
-// declare function generatePassword()
-// variables holding the different characters
-// i.e uppercase = ['A', 'B', 'C']
-// var selectedCharacters = []
-// I need to use prompt() to gather password criteria
-// var passwordLength = prompt("How many characters would you like in your password?")
-// if password length is less than 8 stop function
-// if password length is greater than 128 stop function
-// confirm() for uppercase letters
-// confirm() for lowercase letters
-// confirm() for special characters
-// confirm() for numeric characters
-// once each confirm/prompt has been answered
-// if confirms are true keep or get character type for the confirm
-// if no confirm is true stop function
-// if a confirm is true then concat related arr to selected characters arr
-// i.e ['A', 'B', 'C', a, b, c, 1, 2, 3, %, $, #]
-// var selectedCharacters = [];
-// var uppercaseCharacters = ['A', 'B', 'C'];
-// if(isUppercase) {
-//   selectedCharacters.concat(uppercaseCharacters);
-// }
-// for loop based on password length prompt
-// use Math.floor(Math.random() * selectedCharacters.length) to get random index of selectedCharacters
-// return password text
 
 
 
