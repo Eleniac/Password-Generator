@@ -18,12 +18,14 @@ function generatePassword() {
   var length = prompt(
     "Please write the number of characters you would like your password to be. Please keep the length you select between 8-128."
   );
+
   //where selected characters category choices will be stored to generate the password at the end
   var selectedCharacters = [];
 
-  // if (conditions){write the code to run if condition is true}
+  // if (conditions)
   if (length < 8 || length > 128) {
-  // return to gathering the correct length if the user inputs a letter or a number less than 8 and greater than 128
+  
+ // return to gathering the correct length if the user inputs a number less than 8 and greater than 128
     return "Please pick a number between 8-128 and click the Generate Password button"
   }
 
@@ -60,6 +62,7 @@ function generatePassword() {
   if (special) {
     selectedCharacters=selectedCharacters.concat(specialCharacters);
   }
+
   //password is generated using a for loop and math random from the selectedCharacters pool
 var password = ""
 for (var i = 0; i<length; i++) {

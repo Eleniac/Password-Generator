@@ -26,13 +26,13 @@ Screenshots:
 
 ![Uppercase-Prompt](https://raw.githubusercontent.com/Eleniac/Password-Generator/main/Assets/Images/Uppercase%20Prompt.png)
 
-![Lowercase-Prompt] (https://raw.githubusercontent.com/Eleniac/Password-Generator/main/Assets/Images/Numeric%20Prompt.png)
+![Lowercase-Prompt](https://raw.githubusercontent.com/Eleniac/Password-Generator/main/Assets/Images/Numeric%20Prompt.png)
 
-![Special-Character-Prompt] (https://raw.githubusercontent.com/Eleniac/Password-Generator/main/Assets/Images/Special%20Characters%20Prompt.png)
+![Special-Characters-Prompt](https://raw.githubusercontent.com/Eleniac/Password-Generator/main/Assets/Images/Special%20Characters%20Prompt.png)
 
-![Sample-Password-Generated] (https://raw.githubusercontent.com/Eleniac/Password-Generator/main/Assets/Images/Sample%20Password%20Generated%20.png)
+![Sample-Password-Generated](https://raw.githubusercontent.com/Eleniac/Password-Generator/main/Assets/Images/Sample%20Password%20Generated%20.png)
 
-![Undefinded] (https://raw.githubusercontent.com/Eleniac/Password-Generator/main/Assets/Images/Undefined%20.png)
+![Undefined](https://raw.githubusercontent.com/Eleniac/Password-Generator/main/Assets/Images/Undefined%20.png)
 
 # Credits
 [University-of-Minnesota-Boot-Camp] (https://umn.bootcampcontent.com/University-of-Minnesota-Boot-Camp/UofM-VIRT-FSF-PT-06-2022-U-LOLC)
