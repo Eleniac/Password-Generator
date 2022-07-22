@@ -2,7 +2,7 @@
 A password generator that creates a password that meets certain criteria that will use randomized characters to increase security.
 
 # Description
-This project creates a password generator that will generate a password that will need to meet certain criteria. The user will be prompted to choose a password that is 8-12 characters long, and confirm whether is contains a lowercase, uppercase, and or special characters. The user will be prompted to make sure the password meets this criteria to increase security of the password they use. The final password will meet this criteria and will be displayed on the page for the user to use. This was created to assist a user creating a creative, and secure password to increase security. 
+This project creates a password generator that will generate a password that will need to meet certain criteria. The user will be prompted to choose a password that is 8-128 characters long, and confirm whether is contains a lowercase, uppercase, and or special characters. The user will be prompted to make sure the password meets this criteria to increase security of the password they use. The final password will meet this criteria and will be displayed on the page for the user to use. This was created to assist a user creating a creative, and secure password to increase security. 
 
 ## Installation
 To be able to code this project you will need a code editor such as Visual Studio Code. You will need a browser such as Google Chrome or Safari to open the webpage once it has been completed and to make sure you are making the correct adjustments as you go on. 
@@ -17,7 +17,7 @@ https://github.com/Eleniac/Web-Dev-Portfolio.git
 
 
 # Usage
-This project contains an HTML, CSS and Javascript folder. The first prompt specifies the required length of the password. The user may choose a password length between 8-128. If the user chooses a number less than 8, but greater than 128 the password box will indicate they need to start over by clicking the generate password button. Once the user has selected the appropriate length of their password they will receive an alert with the instructions that they must pick at least one of the following character choices to include in their password. The user will click okay and recieve a series of confirm statements to chose lowercase, uppercase, numeric value or special characters. Once the user has finished their selections the password will generate inside the password generator. A for loop was used to execute the random math using the selected characters pool where the users choices were indexed. 
+This project contains an HTML, CSS and Javascript folder. The first prompt specifies the required length of the password. The user may choose a password length between 8-128. If the user chooses a number less than 8, but greater than 128 the password box will indicate they need to start over by clicking the generate password button. Once the user has selected the appropriate length of their password they will receive an alert with the instructions that they must pick at least one of the following character choices to include in their password. The user will click okay and recieve a series of confirm statements to chose lowercase, uppercase, numeric value or special characters. Once the user has finished their selections the password will generate inside the password generator. A for loop was used to execute the random math using the selected characters pool where the users choices were indexed. If the user does not select one of the characters they will be alerted to start over. 
 
 Screenshots:
 ![Password-Generator](https://raw.githubusercontent.com/Eleniac/Password-Generator/main/Assets/Images/Password%20Generator.png)
@@ -32,7 +32,7 @@ Screenshots:
 
 ![Sample-Password-Generated](https://raw.githubusercontent.com/Eleniac/Password-Generator/main/Assets/Images/Sample%20Password%20Generated%20.png)
 
-
+![Start-Over](https://raw.githubusercontent.com/Eleniac/Password-Generator/main/Assets/Images/Start-Over.png)
 
 # Credits
 [University-of-Minnesota-Boot-Camp] (https://umn.bootcampcontent.com/University-of-Minnesota-Boot-Camp/UofM-VIRT-FSF-PT-06-2022-U-LOLC)
