@@ -32,7 +32,7 @@ Screenshots:
 
 ![Sample-Password-Generated](https://raw.githubusercontent.com/Eleniac/Password-Generator/main/Assets/Images/Sample%20Password%20Generated%20.png)
 
-![Undefined](https://raw.githubusercontent.com/Eleniac/Password-Generator/main/Assets/Images/Undefined%20.png)
+
 
 # Credits
 [University-of-Minnesota-Boot-Camp] (https://umn.bootcampcontent.com/University-of-Minnesota-Boot-Camp/UofM-VIRT-FSF-PT-06-2022-U-LOLC)
