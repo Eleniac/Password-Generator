@@ -18,17 +18,19 @@ function generatePassword() {
   var length = prompt(
     "Please write the number of characters you would like your password to be. Please keep the length you select between 8-128."
   );
-
   //where selected characters category choices will be stored to generate the password at the end
   var selectedCharacters = [];
 
   // if the length is less than 8 or greater than 128 
   if (length < 8 || length > 128) {
-  
  // return to gathering the correct length if the user inputs a number less than 8 and greater than 128
     return "Please pick a number between 8-128 and click the Generate Password button"
-  }
 
+  }  //if length variable is not a number alert user and restart the function
+  if (isNaN(length)){
+    alert("Enter a valid number between 8-128")
+    generatePassword()
+  }
   var uppercase = confirm("Do you want to use an uppercase letter?");
   var uppercaseCharacters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O",
     "P","Q","R","S","T","U","V","W","X","Y","Z",];
@@ -62,7 +64,10 @@ function generatePassword() {
   if (special) {
     selectedCharacters=selectedCharacters.concat(specialCharacters);
   }
-
+if (special=== false && numericValue=== false && lowercase=== false && uppercase=== false) {
+alert("Please start over you did not enter the correct criteria to create the password.Thank you!");
+generatePassword()
+}
   //password is generated using a for loop and math random from the selectedCharacters pool
 var password = ""
 for (var i = 0; i<length; i++) {
